@@ -31,6 +31,9 @@ img {
   padding-left: 20px;
   padding-right: 20px; }
 
+.container--with-social {
+  padding-bottom: 80px; }
+
 .banner {
   position: relative; }
 
@@ -53,34 +56,40 @@ img {
 .social {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 20px;
   list-style: none;
   margin: 0;
   padding: 10px;
   text-align: center;
-  background: #ccc; }
+  background: #eee;
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+  border-top: 1px solid #777; }
   @media screen and (min-width: 600px) {
     .social {
       position: absolute;
       top: 0;
       right: 0;
       bottom: auto;
-      left: auto; } }
+      left: auto;
+      border: none;
+      background: none; } }
 
 .social__item {
   display: inline-block;
   padding: 10px; }
 
 .social__link {
-  background: #fff;
   padding: 10px;
   border-radius: 40px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff; }
 
 .social__link:hover {
-  background: #f07;
-  color: #fff; }
+  background: #f07; }
 
 .aside {
   float: right; }

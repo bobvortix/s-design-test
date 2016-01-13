@@ -1,13 +1,16 @@
 .social {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: $unit;
+  right: $unit;
   list-style: none;
   margin: 0;
   padding: $half-unit;
   text-align: center;
-  background: #ccc;
+  background: $c-light-grey;
+  border-left: 1px solid $c-grey;
+  border-right: 1px solid $c-grey;
+  border-top: 1px solid $c-grey;
   
   @media screen and (min-width: $wide) {
     position: absolute;
@@ -15,6 +18,8 @@
     right: 0;
     bottom: auto;
     left: auto;
+    border: none;
+    background: none;
   }
 }
 
@@ -24,13 +29,14 @@
 }
 
 .social__link {
-  background: $c-white;
   padding: $half-unit;
   border-radius: $double-unit;
   text-decoration: none;
+  font-family: sans-serif;
+  background: $c-black;
+  color: $c-white;
 }
 
 .social__link:hover {
   background: $c-pink;
-  color: #fff;
 }

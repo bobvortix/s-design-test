@@ -18,3 +18,7 @@ img {
   padding-left: $unit;
   padding-right: $unit;
 }
+
+.container--with-social {
+  padding-bottom: 80px; // Magic number
+}
