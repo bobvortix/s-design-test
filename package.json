@@ -1,0 +1,26 @@
+{
+  "name": "s-design-test",
+  "version": "1.0.0",
+  "description": "## Process",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass scss/main.scss css/bundle.css",
+    "build-min": "node-sass scss/main.scss | cleancss -o css/bundle.min.css",
+    "watch": "nodemon -e scss -w scss -x 'npm run build'",
+    "live": "live-reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobvortix/s-design-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobvortix/s-design-test/issues"
+  },
+  "homepage": "https://github.com/bobvortix/s-design-test#readme",
+  "devDependencies": {
+    "clean-css": "^3.4.9",
+    "node-sass": "^3.4.2"
+  }
+}

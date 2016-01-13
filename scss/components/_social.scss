@@ -1,0 +1,36 @@
+.social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: $half-unit;
+  text-align: center;
+  background: #ccc;
+  
+  @media screen and (min-width: $wide) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+.social__item {
+  display: inline-block;
+  padding: $half-unit;
+}
+
+.social__link {
+  background: $c-white;
+  padding: $half-unit;
+  border-radius: $double-unit;
+  text-decoration: none;
+}
+
+.social__link:hover {
+  background: $c-pink;
+  color: #fff;
+}

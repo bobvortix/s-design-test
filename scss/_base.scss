@@ -1,0 +1,20 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: $unit;
+  padding-right: $unit;
+}

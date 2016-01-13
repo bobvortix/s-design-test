@@ -1,0 +1,26 @@
+.nav {}
+
+.nav__list {
+  display: flex;
+  // align-items: stretch;
+  justify-content: space-between;
+  // width: 100%;
+  list-style: none;
+  padding: 0;
+  // margin: 0;
+  // padding: 0;
+}
+
+.nav__item {
+  display: block;
+  // flex: 0 1 auto; /* Default */
+  // list-style-type: none;
+  padding: $half-unit $unit;
+  background: #eee;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+}
