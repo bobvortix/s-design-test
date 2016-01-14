@@ -431,6 +431,9 @@ a {
   margin-bottom: 20px;
   color: #777; }
 
+.article__primary {
+  margin-bottom: 20px; }
+
 .banner {
   position: relative;
   padding-top: 20px;
