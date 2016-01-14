@@ -1,0 +1,22 @@
+.see-also__item {
+  @include grid;
+  margin-bottom: $unit;
+}
+
+.see-also__title {
+  @include grid__cell;
+  width: 3 / 4 * 100%;
+  
+  @media screen and (min-width: $wide) {
+    width: 100%;
+  }
+}
+
+.see-also__image {
+  @include grid__cell;
+  width: 1 / 4 * 100%;
+  
+  @media screen and (min-width: $wide) {
+    width: 100%;
+  }
+}

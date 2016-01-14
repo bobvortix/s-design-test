@@ -20,5 +20,16 @@ img {
 }
 
 .container--with-social {
-  padding-bottom: 80px; // Magic number
+  padding-bottom: 2 * $double-unit; // Magic number
+  
+  @media screen and (min-width: $wide) {
+    padding-bottom: 0;
+  }
+}
+
+.brand {
+  font-size: 48px;
+  font-style: italic;
+  text-decoration: none;
+  color: $c-black;
 }

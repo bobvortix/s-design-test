@@ -7,7 +7,7 @@
   margin: 0;
   padding: $half-unit;
   text-align: center;
-  background: $c-light-grey;
+  background-color: rgba($c-light-grey, 0.8);
   border-left: 1px solid $c-grey;
   border-right: 1px solid $c-grey;
   border-top: 1px solid $c-grey;
@@ -19,7 +19,7 @@
     bottom: auto;
     left: auto;
     border: none;
-    background: none;
+    background-color: none;
   }
 }
 
@@ -33,10 +33,10 @@
   border-radius: $double-unit;
   text-decoration: none;
   font-family: sans-serif;
-  background: $c-black;
+  background-color: $c-black;
   color: $c-white;
 }
 
 .social__link:hover {
-  background: $c-pink;
+  background-color: $c-pink;
 }

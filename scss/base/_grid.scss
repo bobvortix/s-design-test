@@ -1,11 +1,19 @@
-.grid {
+@mixin grid {
   margin-left: -$unit;
 }
 
-.grid__cell {
+@mixin grid__cell {
   display: inline-block;
   vertical-align: top;
   padding-left: $unit;
+}
+
+.grid {
+  @include grid;
+}
+
+.grid__cell {
+  @include grid__cell;
 }
 
 @media screen and (min-width: $wide) {

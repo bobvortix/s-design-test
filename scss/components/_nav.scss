@@ -1,26 +1,120 @@
-.nav {}
 
 .nav__list {
-  display: flex;
-  // align-items: stretch;
-  justify-content: space-between;
-  // width: 100%;
+  display: flex; 
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0;
   padding: 0;
-  // margin: 0;
-  // padding: 0;
 }
 
+// .nav__list,
 .nav__item {
-  display: block;
-  // flex: 0 1 auto; /* Default */
-  // list-style-type: none;
-  padding: $half-unit $unit;
-  background: #eee;
-  border-radius: 8px;
-  font-size: 20px;
+  flex: 1;
+}
+
+.nav__item:last-child {
+  border-bottom: none;
 }
 
 .nav__link {
+  display: block;
   text-decoration: none;
+
+  &:hover {
+    color: $c-pink;
+  }
 }
+
+.nav__item {
+  position: relative;
+  line-height: 50px;
+  // color: #000;
+  text-align: center;
+}  
+
+nav input,
+.nav__label {
+  display: none;
+  width: 36px; 
+  height: 36px; 
+  // background: blue; 
+  // color: red;
+  text-align: center; 
+  line-height: 36px;
+  font-size: 1.6rem;
+  border-radius: 4px;
+}
+
+.nav__label {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition: .4s;
+}
+.nav__label:hover { cursor:pointer; }
+.nav__label:before {
+  font-family: FontAwesome;
+  font-size: 24px;
+  content: "\f0c9";
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px){
+  .nav__list {
+    display: none; 
+    // box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+  }
+  .nav__item {
+    flex: none; 
+    width: 100%;
+    border-bottom: solid 1px #777;
+  } 
+  nav input[type="checkbox"]:checked + ul {
+    display: block;
+    width: 100%;
+    // background: #999;          
+  }
+  .nav__label{display: block;}  
+  nav input[type="checkbox"]:checked + ul li:nth-child(1) {
+    background: #777; 
+    // color: #000;
+  }  
+}
+
+// .nav [type="checkbox"],
+// ..nav__label {
+//   display: none;
+// }
+// 
+// [type="checkbox"]:checked ~ ul {
+//     display: block;
+//     z-index: 9999;
+//     position: absolute;
+//     right: 20px;
+//     left: 20px;
+// }
+// 
+// .nav__list {
+//   display: flex;
+//   // align-items: stretch;
+//   justify-content: space-between;
+//   // width: 100%;
+//   list-style: none;
+//   padding: 0;
+//   // margin: 0;
+//   // padding: 0;
+// }
+// 
+// .nav__item {
+//   display: block;
+//   // flex: 0 1 auto; /* Default */
+//   // list-style-type: none;
+//   padding: $half-unit $unit;
+//   background: #eee;
+//   border-radius: 8px;
+//   font-size: 20px;
+// }
+// 
+// .nav__link {
+//   text-decoration: none;
+// }

@@ -1,13 +1,14 @@
 {
   "name": "s-design-test",
   "version": "1.0.0",
-  "description": "## Process",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass scss/main.scss css/bundle.css",
-    "build-min": "node-sass scss/main.scss | cleancss -o css/bundle.min.css",
+    "build": "node-sass scss/recipe.scss css/bundle.css",
+    "build-min": "node-sass scss/recipe.scss | cleancss -o css/bundle.min.css",
     "watch": "nodemon -e scss -w scss -x 'npm run build'",
-    "live": "live-reload"
+    "live": "live-server",
+    "start": "npm run watch & npm run live"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,20 @@
+.more {
+  display: block;
+}
+
+.more--aside {
+  display: none;
+
+  @media screen and (min-width: $wide) {
+    display: block;
+    float: right;
+    margin-left: $unit;
+  }
+}
+
+.more--footer {
+  
+  @media screen and (min-width: $wide) {
+    @include visually-hidden; 
+  }
+}

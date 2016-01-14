@@ -10,7 +10,9 @@
     <div class="container container--with-social">
       <header class="banner" role="banner">
         <a class="brand" href="/">Company Name</a>
+
         <nav class="nav">
+          <input class="nav__toggle" type="checkbox" id="nav-toggle" name="nav-toggle"> 
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
             <li class="nav__item"><a class="nav__link" href="#ebooks">eBooks</a></li>
@@ -19,7 +21,21 @@
             <li class="nav__item"><a class="nav__link" href="#help">Help</a></li>
             <li class="nav__item"><a class="nav__link" href="#login">Login</a></li>
           </ul>
+          <label class="nav__label" for="nav-toggle" id="nav-toggle"></label> 
         </nav>
+        
+        
+        <!-- <nav class="nav">
+          <input type="checkbox" id="nav-dropdown" /><label for="nav-dropdown"></label>
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#ebooks">eBooks</a></li>
+            <li class="nav__item"><a class="nav__link" href="#magazines">Magazines</a></li>
+            <li class="nav__item"><a class="nav__link" href="#movies">Movies</a></li>
+            <li class="nav__item"><a class="nav__link" href="#help">Help</a></li>
+            <li class="nav__item"><a class="nav__link" href="#login">Login</a></li>
+          </ul>
+        </nav> -->
         <ul class="social">
           <li class="social__item"><a class="social__link" href="#facebook">Fb</a></li>
           <li class="social__item"><a class="social__link" href="#twitter">Tw</a></li>
@@ -35,10 +51,19 @@
             </span>
           </header>
           <img src="http://placehold.it/800x400" alt="Description of this image"/>
+          <!-- Unfortunate duplicate -->
+          <aside class="more--aside" aria-hidden="true">
+            <h2>More...</h2>
+            <ul>
+              <li><a href="#link1">Link #1</a></li>
+              <li><a href="#link2">Another link</a></li>
+              <li><a href="#link3">Third link</a></li>
+            </ul>
+          </aside>
           <p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Etiam fermentum. Integer fringilla. Integer fringilla. Pellentesque acturpis. Sed elementum, felis quis porttitor sollicitudin, augue nulla sodales sapien, amet posuere quam purus at lacus. Nam id neque. Morbi pulvinar nulla sit amet nisl. Etiam pharetra lacus sed velit imperdiet bibendum.
           </p>
           <p>Sed quis elit. In hac habitasse platea dictumst. Maecenas justo. Donec interdum vestibulum libero. Nam laoreet dui sed magna. Nam consectetuer mollis dolor. Aenean ligula. Aliquam sed erat. Donec interdum vestibulum libero. Mauris et dolor.</p>
-          <aside class="aside">
+          <aside class="more more--footer">
             <h2>More...</h2>
             <ul>
               <li><a href="#link1">Link #1</a></li>
@@ -47,14 +72,16 @@
             </ul>
           </aside>
         </main><!--
-        --><div class="sidebar grid__cell grid__cell--one-third-at-wide">
-          <div>
-            <h3>A guide to snoopsetting</h3>
-            <img src="http://placehold.it/400x400" alt="Another description"/>
-          </div>
-          <div>
-            <h3>Welcome to the Surveillance State</h3>
-            <img src="http://placehold.it/400x400" alt="Yet another description"/>
+        --><div class="grid__cell grid__cell--one-third-at-wide">
+          <div class="see-also">
+            <div class="see-also__item">
+              <h3 class="see-also__title">A guide to snoopsetting</h3><!--
+              --><img class="see-also__image" src="http://placehold.it/400x400" alt="Another description"/>
+            </div>
+            <div class="see-also__item">
+              <h3 class="see-also__title">Welcome to the Surveillance State</h3><!--
+              --><img class="see-also__image" src="http://placehold.it/400x400" alt="Yet another description"/>
+            </div>
           </div>
         </div>
 
