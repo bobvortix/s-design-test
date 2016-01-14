@@ -8,7 +8,8 @@
   margin-bottom: $unit;
   padding: $half-unit;
   font-size: 14px;
-  border: 1px solid $c-light-grey;
+  color: $c-brand-shadow;
+  border: 1px solid $c-brand-shadow;
   border-radius: $unit;
   text-transform: uppercase;
   
@@ -48,8 +49,6 @@
 .nav__link {
   display: block;
   padding: $half-unit 0;
-  text-decoration: none;
-  
   color: $c-white;
   
   &:hover {
@@ -72,6 +71,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-bottom: $half-unit;
   }
 
   .nav__item {

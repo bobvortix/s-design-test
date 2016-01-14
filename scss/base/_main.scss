@@ -25,6 +25,15 @@ p {
   line-height: 1.5em;
 }
 
+a {
+  text-decoration: none;
+  color: $c-pink;
+
+  &:hover {
+    color: $c-brand-shadow;
+  }
+}
+
 .container {
   max-width: $max-width;
   margin: 0 auto;

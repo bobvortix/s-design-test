@@ -17,13 +17,13 @@
 }
 
 @media screen and (min-width: $wide) {
-  .grid__cell--two-thirds-at-wide {
-    width: 2 / 3 * 100%;
+  .grid__cell--one-quarter-at-wide {
+    width: 1 / 4 * 100%;
   }
 }
 
 @media screen and (min-width: $wide) {
-  .grid__cell--one-third-at-wide {
-    width: 1 / 3 * 100%;
+  .grid__cell--three-quarters-at-wide {
+    width: 3 / 4 * 100%;
   }
 }

@@ -7,7 +7,10 @@
   padding: $half-unit;
   list-style: none;
   text-align: center;
-  background-color: rgba($c-black, 0.75);
+  background-color: rgba($c-white, 0.75);
+  border-top: 1px solid $c-grey;
+  border-left: 1px solid $c-grey;
+  border-right: 1px solid $c-grey;
   
   @media screen and (min-width: $wide) {
     position: absolute;
@@ -15,6 +18,7 @@
     right: 0;
     bottom: auto;
     left: auto;
+    border: none;
     background-color: transparent;
   }
 }
@@ -27,14 +31,13 @@
 .social__link {
   padding: $half-unit;
   border-radius: $double-unit;
-  text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  background-color: $c-white;
-  color: $c-black;
+  background-color: $c-brand-shadow;
+  color: $c-white;
 }
 
 .social__link:hover {
-  color: $c-white;
-  background-color: $c-pink;
+  color: $c-black;
+  background-color: $c-white;
 }
