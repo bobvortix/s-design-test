@@ -1,0 +1,21 @@
+.article {
+  margin-top: $double-unit;
+  margin-bottom: $double-unit;
+}
+
+.article__header {
+  margin-bottom: $unit;
+}
+
+.article__title {
+  margin-bottom: $half-unit;
+}
+
+.article__meta {
+  display: block;
+  margin-bottom: $unit;
+}
+
+.article__image {
+  // margin-bottom: $half-unit;
+}

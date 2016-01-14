@@ -6,6 +6,7 @@
 .see-also__title {
   @include grid__cell;
   width: 3 / 4 * 100%;
+  margin-bottom: $half-unit;
   
   @media screen and (min-width: $wide) {
     width: 100%;

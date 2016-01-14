@@ -4,12 +4,25 @@
 
 body {
   margin: 0;
+  font: sans-serif;
+  color: $c-black;
 }
 
 img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: $unit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $unit;
+  line-height: 1.5em;
 }
 
 .container {
@@ -20,16 +33,9 @@ img {
 }
 
 .container--with-social {
-  padding-bottom: 2 * $double-unit; // Magic number
+  padding-bottom: $double-unit;
   
   @media screen and (min-width: $wide) {
     padding-bottom: 0;
   }
-}
-
-.brand {
-  font-size: 48px;
-  font-style: italic;
-  text-decoration: none;
-  color: $c-black;
 }

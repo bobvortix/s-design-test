@@ -1,120 +1,87 @@
+.nav {
+  text-align: center;
+}
+
+.nav__label {
+
+  display: inline-block;
+  margin-bottom: $unit;
+  padding: $half-unit;
+  font-size: 14px;
+  border: 1px solid $c-light-grey;
+  border-radius: $unit;
+  text-transform: uppercase;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $c-white;
+    color: $c-brand-primary;
+    border-color: $c-white;
+  } 
+}
+
+.nav__toggle {
+  display: none;
+  
+  &:checked + .nav__list {
+    position: static;
+  }
+}
 
 .nav__list {
-  display: flex; 
-  flex-wrap: wrap;
-  list-style: none;
+  
+  display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 0 $unit 0;
+  
+  // No :unchecked unfortunately (http://stackoverflow.com/a/9773961/186965)
+  // So... quick visually-hidden that's easy to reset with "position: static"
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
-// .nav__list,
 .nav__item {
-  flex: 1;
+  display: block;
 }
-
-.nav__item:last-child {
-  border-bottom: none;
-}
-
+ 
 .nav__link {
   display: block;
+  padding: $half-unit 0;
   text-decoration: none;
-
+  
+  color: $c-white;
+  
   &:hover {
-    color: $c-pink;
+    color: $c-brand-shadow;
   }
 }
 
-.nav__item {
-  position: relative;
-  line-height: 50px;
-  // color: #000;
-  text-align: center;
-}  
+@media screen and (min-width: $wide) {
 
-nav input,
-.nav__label {
-  display: none;
-  width: 36px; 
-  height: 36px; 
-  // background: blue; 
-  // color: red;
-  text-align: center; 
-  line-height: 36px;
-  font-size: 1.6rem;
-  border-radius: 4px;
-}
-
-.nav__label {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  transition: .4s;
-}
-.nav__label:hover { cursor:pointer; }
-.nav__label:before {
-  font-family: FontAwesome;
-  font-size: 24px;
-  content: "\f0c9";
-  text-align: center;
-}
-
-@media only screen and (max-width: 1080px){
-  .nav__list {
+  .nav__label {
     display: none; 
-    // box-shadow: 0 0 5px rgba(0, 0, 0, .7);
   }
-  .nav__item {
-    flex: none; 
-    width: 100%;
-    border-bottom: solid 1px #777;
-  } 
-  nav input[type="checkbox"]:checked + ul {
-    display: block;
-    width: 100%;
-    // background: #999;          
-  }
-  .nav__label{display: block;}  
-  nav input[type="checkbox"]:checked + ul li:nth-child(1) {
-    background: #777; 
-    // color: #000;
-  }  
-}
 
-// .nav [type="checkbox"],
-// ..nav__label {
-//   display: none;
-// }
-// 
-// [type="checkbox"]:checked ~ ul {
-//     display: block;
-//     z-index: 9999;
-//     position: absolute;
-//     right: 20px;
-//     left: 20px;
-// }
-// 
-// .nav__list {
-//   display: flex;
-//   // align-items: stretch;
-//   justify-content: space-between;
-//   // width: 100%;
-//   list-style: none;
-//   padding: 0;
-//   // margin: 0;
-//   // padding: 0;
-// }
-// 
-// .nav__item {
-//   display: block;
-//   // flex: 0 1 auto; /* Default */
-//   // list-style-type: none;
-//   padding: $half-unit $unit;
-//   background: #eee;
-//   border-radius: 8px;
-//   font-size: 20px;
-// }
-// 
-// .nav__link {
-//   text-decoration: none;
-// }
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    position: static; // Reset
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__item {
+    display: block;
+    text-align: center;
+  }
+
+  .nav__link {
+    display: block;
+    padding: $half-unit 0;
+    font-size: 20px;
+  }
+}

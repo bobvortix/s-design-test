@@ -1,0 +1,25 @@
+.brand {
+  display: block;
+  text-align: center;
+  margin-bottom: $half-unit;
+  
+  color: $c-white;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  
+  @media screen and (min-width: $wide) {
+    display: inline-block;
+    margin-bottom: $unit;
+    text-align: left;
+    font-size: 40px;
+  }
+}
+
+.brand:before {
+  display: inline-block;
+  margin-right: $half-unit;
+  content: '\1F607';
+  font-style: normal;
+  font-weight: normal;
+}

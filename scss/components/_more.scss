@@ -1,5 +1,12 @@
 .more {
   display: block;
+  margin-bottom: $unit;
+}
+
+.more__links {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
 }
 
 .more--aside {

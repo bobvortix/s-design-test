@@ -1,3 +1,10 @@
 .banner {
   position: relative;
+  padding-top: $unit;
+  background-color: $c-brand-primary;
+  color: $c-white;
+
+  @media screen and (min-width: $wide) {
+    padding-top: $double-unit;
+  }
 }

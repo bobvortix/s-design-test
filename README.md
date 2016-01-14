@@ -19,6 +19,7 @@
 
 ## TODO
 
+- Add typography classes / mixins.
 - Add appropriate fallbacks for no-flexbox support (e.g. IE8/9).
 - Consider adding additional compilation for no media query support (e.g. IE8) using [sass-mq](https://github.com/sass-mq/sass-mq) or similar, or polyfill media queries.
 - Add appropriate `aria-roles` and accessibility (screenreader).

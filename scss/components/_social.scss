@@ -3,14 +3,11 @@
   bottom: 0;
   left: $unit;
   right: $unit;
-  list-style: none;
   margin: 0;
   padding: $half-unit;
+  list-style: none;
   text-align: center;
-  background-color: rgba($c-light-grey, 0.8);
-  border-left: 1px solid $c-grey;
-  border-right: 1px solid $c-grey;
-  border-top: 1px solid $c-grey;
+  background-color: rgba($c-black, 0.75);
   
   @media screen and (min-width: $wide) {
     position: absolute;
@@ -18,8 +15,7 @@
     right: 0;
     bottom: auto;
     left: auto;
-    border: none;
-    background-color: none;
+    background-color: transparent;
   }
 }
 
@@ -32,11 +28,13 @@
   padding: $half-unit;
   border-radius: $double-unit;
   text-decoration: none;
-  font-family: sans-serif;
-  background-color: $c-black;
-  color: $c-white;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: $c-white;
+  color: $c-black;
 }
 
 .social__link:hover {
+  color: $c-white;
   background-color: $c-pink;
 }

@@ -13,3 +13,7 @@
 .visually-hidden {
   @include visually-hidden;
 }
+
+.relative {
+  position: relative;
+}
