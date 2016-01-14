@@ -1,0 +1,10 @@
+.footer {
+  
+  padding-bottom: 2 * $double-unit;
+  text-align: center;
+  color: $c-grey;
+  
+  @media screen and (min-width: $wide) {
+    padding-bottom: $unit;
+  }
+}

@@ -40,11 +40,3 @@ a {
   padding-left: $unit;
   padding-right: $unit;
 }
-
-.container--with-social {
-  padding-bottom: $double-unit;
-  
-  @media screen and (min-width: $wide) {
-    padding-bottom: 0;
-  }
-}
