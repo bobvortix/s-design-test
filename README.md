@@ -15,6 +15,7 @@ http://bobvortix.github.io/s-design-test/
 - Demonstrates use of grid in HTML as well as Sass (deciding when to use one over the other is tricky).
 - Using `flexbox` for equally spaced menu items (at wide).
 - Omitted aria-roles as need some time to decide on these.
+- Validated with https://validator.w3.org/
 
 ## Perhaps a better way?
 
